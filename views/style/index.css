@@ -1,117 +1,123 @@
-
-
 body {
-  font-family: sans-serif;
+  background: linear-gradient(45deg, #001a34, #000000);
+  font-family: "Open Sans", sans-serif;
 }
 
-.signup-wrapper {
-  display: flex;
-  position: fixed;
-  top: 50%;
-  width: 100%;
-  height: 100%;
+form {
+  text-align: center;
+}
+
+.login {
+  width: 400px;
+  font-size: 16px;
+  position: absolute;
   left: 50%;
+  top: 50%;
+  box-shadow: 0 5px 6px #00000036;
   transform: translate(-50%, -50%);
-  background-color: primaryColor;
-  z-index: 9999;
+  border-radius: 22px;
+  overflow: hidden;
+  transition: 1s;
+  height: 410px;
+}
 
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    color: white;
-    font-size: 32px;
-    font-weight: bolder;
-    cursor: pointer;
-  }
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-  .login-container {
-    margin: auto;
-    vertical-align: middle;
-    background: white;
-    box-shadow: 0 5px 8px rgba(75, 75, 75, 0.3);
-    padding: 30px 70px 50px;
-    h2 {
-      margin-top: 0;
-      padding-bottom: 14px;
-    }
-    .form-group {
-      position: relative;
-      margin-bottom: 30px;
-      label {
-        position: absolute;
-        position: absolute;
-        z-index: 1;
-        bottom: 0;
-        left: 0;
-        background-color: rgb(123, 234, 178);
-        color: #050606;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
+.input-container {
+  opacity: 1;
+  transition: 1s;
+}
 
-        transition: 0.8s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    }
-    input:hover + label,
-    input:focus + label,
-    input:valid + label {
-      top: 0;
-      font-size: 16px;
-      left: 95%;
-      opacity: 0.6;
-    }
-    div {
-      text-align: center;
-      input {
-        width: 220px;
-        border: none;
-        padding: 11px 6px;
-        background-color: ghostwhite;
-        position: relative;
-        border-bottom: 1px solid silver;
-        outline: none;
-        &::placeholder {
-          color: silver;
-        }
-      }
+img {
+  width: 80px;
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 2px 6px #001a348a;
+}
 
-      button {
-        position: relative;
-        margin-top: 12px;
-        padding: 8px 0;
-        width: 100%;
-        font-size: 16px;
-        border: 1px solid thirdColor;
-        overflow: hidden;
-        color: rgb(1, 17, 1);
-        margin-bottom: 10px;
-        background-color:green;
-        cursor: pointer;
-        
-      }
-      button:hover{
-        background-color: rgb(107, 4, 23);
-      }
-    }
-    
-   
-  }
+.login-header {
+  background: rgb(0, 55, 109);
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding-top: 32px;
+}
 
-  hr {
-    border-color: rgba(207, 207, 207, 0.3);
-    margin-top: 20px;
-  }
+.login-container {
+  background: rgb(0, 55, 109);
+  padding: 40px 30px;
+  transition: 1s;
+}
 
-  #create {
-    font-size: 12px;
-    color: rgba(93, 92, 92, 0.8);
-    cursor: pointer;
-    &:hover {
-      color: black;
-    }
-  }
+/* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 12px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: rgb(170, 170, 170);
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #c0c0c03b;
+  padding-left: 0;
+  padding-bottom: 10px;
+}
+
+/* Text fields' focus effect */
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: #888;
+}
+
+.login input[type="button"] {
+  background: rgb(17, 79, 141);
+  width: 200px;
+  margin: auto;
+  border-bottom: 22px;
+  border: none;
+  color: white;
+  overflow: hidden;
+  border-radius: 22px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+/* Animation */
+
+.hide-section {
+  opacity: 0;
+}
+
+.hide-form {
+  padding: 0;
+  padding-top: 27px;
+}
+
+.hide-login {
+  width: 165px;
+  height: 167px;
+  border-radius: 50%;
 }
