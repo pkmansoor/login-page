@@ -4,22 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="/views/style/index.css">
+  <link rel="stylesheet" type="text/css" href="index.css" >
 
 </head>
 <body>
   
   <div class="login hide-login">
-    <form class="login-container hide-form" method="POST" action="login">
+    <form class="login-container hide-form" action="login" method="POST">
        <img src="/images/3135715.png" alt="" />
        <div class="input-container hide-section">
-          <p><input type="email" placeholder="Email" name="email" /></p>
-          <p><input type="password" placeholder="Password" name="password" /></p>
-          <p><input class="button" type="button" value="Log in" /></p>
+          <label><input type="email" placeholder="Email" name="email" required /></label>
+          <label><input type="password" placeholder="Password" name="password" required /></label>
+          <label><input class="button" type="submit" value="Log in" /></label>
        </div>
     </form>
  </div>
-  <script src="/views/animation/animation.js"></script>
+  <script src="animation.js"></script>
+  <script src="validator.js"></script>
 
 
 </body>

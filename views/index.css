@@ -58,8 +58,11 @@ img {
 }
 
 /* Every row inside .login-container is defined with p tags */
-.login p {
+.login label,button {
   padding: 12px;
+}
+.button:hover{
+  background-color: #001a34;
 }
 
 .login input {
@@ -121,3 +124,4 @@ img {
   height: 167px;
   border-radius: 50%;
 }
+

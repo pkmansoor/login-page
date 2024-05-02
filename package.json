@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start" : "node script.js",
-    "dev" : "nodemon script.js"
+    "start": "node script",
+    "dev": "nodemon script.js"
   },
   "author": "MOHAMMED MANSOOR",
   "license": "ISC",
@@ -13,6 +13,6 @@
     "nodemon": "^3.1.0"
   },
   "dependencies": {
-    "expres": "^0.0.5"
+    "express": "^4.19.2"
   }
 }
