@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/views/style/index.css">
+
+</head>
+<body>
+  
+  <div class="signup-wrapper">
+    <span class="close" onClick="{this.close}">
+      X
+    </span>
+    <div class="login-container" id="del">
+      <h2>Signup</h2>
+      <div class="form-group">
+        <input
+          type="text"
+          name="username"
+          placeholder="Username"
+          title=""
+          required
+        />
+        <label>Username</label>
+      </div>
+
+      <div class="form-group">
+        <input
+          type="text"
+          name="email"
+          placeholder="Email"
+          title=""
+          required
+        />
+        <label>Email</label>
+      </div>
+
+      <div class="form-group">
+        <!-- <a href="">Forgot Password?</a> -->
+        <input
+          type="text"
+          name="password"
+          placeholder="Password"
+          title=""
+          required
+        />
+        <label>Password</label>
+      </div>
+
+      <div class="form-group">
+        <input
+          type="text"
+          name="cpassword"
+          placeholder="Confirm Password"
+          title=""
+          required
+        />
+        <label>Confirm Password</label>
+      </div>
+      <div class="form-group">
+        <button>Create</button>
+      </div>
+      <hr />
+      <div id="create">
+        Already Created?
+      </div>
+    </div>
+  </div>
+
+  <script src="/views/animation/animation.js"></script>
+
+
+</body>
+</html>
